@@ -52,8 +52,34 @@ if (!empty($_POST)) {
             <input type="password" class="password-input" placeholder="Password" name="password">
             <input type="submit" class="button button-submit" value="Log In">
         </form>
-        <button class="button button-std" id="singup" onclick="window.location.href='signup.php'">S'enregistrer        </button>
+        <button class="button button-std" id="singup" onclick="window.location.href='signup.php'">S'enregistrer</button>
+        <br>
+        <a class="body-link" target="_blank" href="https://github.com/jbournonville/CONFERENCE.DEV">GitHub Repository <i class="fa fa-github" aria-hidden="true"></i></a>
+    </div>
+
+    <div class="info">
+        <button type="button" class="button button-valid" onclick="showpopup()"><i class="fa fa-info" aria-hidden="true"></i> Aide</button>
+    </div>
+
+    <div id="popup">
+        <div class="popup-container">
+            <p>Pour vous connecter utilisez les identifiants prédéfinis (login -> mot de passe):<br>
+                -   usr -> usr  (compte utilisateur standard)<br>
+                -   spk -> spk  (compte conférencier)<br>
+                -   adm -> adm  (compte administrateur)</p>
+            <button type="button" class="button" onclick="hidepopup()">OK<i class="fa fa-thumbs-up fa-2x" aria-hidden="true"></i></button>
+        </div>
     </div>
 </div>
+
+<script>
+    function showpopup(){
+        document.getElementById('popup').className = "is-visible";
+    }
+
+    function hidepopup(){
+        document.getElementById('popup').className = "";
+    }
+</script>
 </body>
 </html>
