@@ -1,0 +1,32 @@
+/* ==> NAVBAR */
+
+.navigation
+  /*noinspection CssRedundantUnit*/
+  margin: auto 0
+  text-transform: uppercase
+
+  .menu
+    text-align: center
+    font-size: 20px
+    .menu-item
+      display: inline-block
+      margin: 0 20px
+      .dropdown-menu
+        background-color: rgba(131, 147, 168, 0.7)
+        padding-left: 0
+        list-style: none
+        position: absolute
+        left: -999em
+        text-align: left
+        z-index: 1000
+        li
+          margin: 10px 5px
+        &:hover
+          color: #3D4C65
+      &:hover .dropdown-menu
+        left: auto
+  a
+    text-decoration: none
+    color: $white
+    &:hover
+      color: $std-light

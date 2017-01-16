@@ -1,0 +1,64 @@
+/* ==> BUTTONS */
+
+.button
+  text-transform: uppercase
+  display: inline-block
+  box-sizing: border-box
+  margin: 20px
+  border-radius: 25px
+  border: none
+  width: 60%
+  height: 50px
+  font-size: 16px
+  color: $white
+  cursor: pointer
+
+.button-small
+  font-size: 12px
+  height: 30px
+  width: 100px
+  margin: 5px
+
+.button-medium
+  font-size: 14px
+  height: 35px
+  margin: 10px auto
+
+.button-std
+  background-color: $std
+
+.button-valid
+  background-color: $success
+
+.button-abort
+  background-color: $fail
+
+.button-submit
+  background-color: $submit
+
+.button-disabled
+  background-color: $grey3
+  cursor: default
+
+.button-rounded
+  border: none
+  height: 30px
+  width: 30px
+  border-radius: 50%
+  margin: 0 5px
+  transition: all .2s ease-in-out
+  i
+    color: $white
+  &:hover
+    transform: scale(1.1)
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3)
+
+.button-group
+  margin: 20px auto
+  width: 95%
+  text-align: center
+  position: absolute
+  bottom: 0
+
+.button-centered
+  text-align: center

@@ -1,0 +1,45 @@
+/* ==> FORM */
+.table
+  max-width: 1000px
+  margin: auto
+  table
+    width: 100%
+    border-collapse: collapse
+  th
+    background-color: $std
+    color: $white
+  th, td
+    padding: 10px
+    text-align: left
+  tr
+    color: #3D4C65
+    &:nth-child(even)
+      background-color: $grey1
+    &:hover
+      background-color: $std-light
+      color: $white
+  .button-col
+    text-align: center
+  .table-link
+    text-decoration: none
+    color: #3D4C65
+  td img
+    max-width: 200px
+    transition: all .4s ease-in-out
+    &:hover
+      transform: scale(2.5)
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3)
+  .add-button
+
+    background-color: $std
+    text-align: center
+    &:hover
+      background-color: $std-light
+    a
+      text-decoration: none
+      color: $white
+      display: block
+.table-small
+  max-width: 500px
+  .dataNumeric
+    text-align: center
