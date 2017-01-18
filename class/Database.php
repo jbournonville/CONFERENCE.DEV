@@ -20,6 +20,7 @@ class Database
         $this->connection = new PDO("mysql:dbname=$databaseName;host=$host", $login, $password);
         $this->connection->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
         $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $this->connection->query("SET NAMES utf8");
     }
 
     /**
